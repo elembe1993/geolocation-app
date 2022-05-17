@@ -5,7 +5,7 @@ pipeline {
 }
 
     triggers {
-  pollSCM '* * * * *'
+  pollSCM ('* * * * *')
 }
 
 
@@ -32,7 +32,7 @@ pipeline {
         }
          stage('deploy') {
             steps {
-                echo 'Hello deploy'
+                echo 'Hello deploy my changes'
             }
         }
     }
